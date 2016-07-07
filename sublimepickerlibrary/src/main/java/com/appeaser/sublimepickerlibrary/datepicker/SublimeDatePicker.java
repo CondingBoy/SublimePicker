@@ -669,10 +669,10 @@ public class SublimeDatePicker extends FrameLayout {
                 && mTempDate.get(Calendar.DAY_OF_YEAR) != mMaxDate.get(Calendar.DAY_OF_YEAR)) {
             return;
         }
-        if (mCurrentDate.getEndDate().after(mTempDate)) {
-            mCurrentDate.getEndDate().setTimeInMillis(maxDate);
-            onDateChanged(false, true, true);
-        }
+        //if (mCurrentDate.getEndDate().after(mTempDate)) {
+        //    mCurrentDate.getEndDate().setTimeInMillis(maxDate);
+        //    onDateChanged(false, true, true);
+        //}
         mMaxDate.setTimeInMillis(maxDate);
         mDayPickerView.setMaxDate(maxDate);
         mYearPickerView.setRange(mMinDate, mMaxDate);
